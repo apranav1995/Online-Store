@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+ 
+  <head>
+  <title>SeafoodsOnline</title>
+    <script data-require="angular.js@1.2.10" data-semver="1.2.10" src="http://code.angularjs.org/1.2.10/angular.js"></script>
+    <script src="http://angular-ui.github.io/ui-router/release/angular-ui-router.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="css/bootstrap.css" rel="stylesheet">
+    
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    
+    <link href="css/signin.css" rel="stylesheet">
+    
+  </head>
+
+  <body>
+    <div class="container" ng-app="app">
+     <header ng-include="'html/nav.html'"></header> 
+  <!--  <a ui-sref="login">Login</a>
+  <a ui-sref="register">Register</a>
+  <a ui-sref="product">Product</a>
+-->
+      <div ui-view></div>
+      <footer ng-include="'footer.html'"></footer>
+    </div>
+  </body>
+  
+  <script src="js/app.js"></script>
+  
+  <script src="controller/loginCtrl.js"></script>
+   <script src="controller/registerCtrl.js"></script>
+   <script src="controller/prodCtrl.js"></script>
+   <script src="controller/welcomeCtrl.js"></script>
+  <script src="controller/orderCtrl.js"></script>
+  <script src="controller/finalCtrl.js"></script>
+
+
+</html>

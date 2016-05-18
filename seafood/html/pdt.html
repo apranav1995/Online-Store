@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en"><head>
+
+    <title>Purchase</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+       <!-- Custom styles for this template -->
+    <link href="css/signin.css" rel="stylesheet">
+    <script src="controller/orderCtrl.js"></script>
+   
+  </head>
+
+  <body>
+<div ng-app="app">
+
+
+      <form class="form-signin"><center>
+        <h2 class="form-signin-heading">Purchase</h2><br>
+        <h2 class="form-signin-heading">Name : {{namef}}</h2><br>
+        <h2 class="form-signin-heading">Cost : {{costf}}</h2><br><br></center>
+        <label for="name" class="sr-only">Name</label>
+        <input ng-model="uname" class="form-control" placeholder="your Name" required="" autofocus="" type="text">
+        <label for="addr" class="sr-only">Address</label>
+        <input ng-model="addr" class="form-control" placeholder="Full address" required="" type="text">
+        <label for="phno" class="sr-only">Mobile Number</label>
+        <input ng-model="phno" class="form-control" placeholder="XXXX-XXXX-XX" required="" autofocus="" type="number">
+        <label for="nokg" class="sr-only">Number of kgs</label>
+        <input ng-model="nokg" class="form-control" placeholder="Number of kgs" required="" autofocus="" type="number">
+        <button class="btn btn-lg btn-primary btn-block" type="button" ng-click="orderde()">Order</button>
+      </form>
+
+   <center>    <h2 class="form-signin-heading">{{cost4}}</h2></center><br>
+
+    </div> <!-- /container -->
+
+
+
+</body></html>

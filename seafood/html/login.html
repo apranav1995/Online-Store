@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en"><head>
+
+    <title>Login</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap.css" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+       <!-- Custom styles for this template -->
+    <link href="signin.css" rel="stylesheet">
+    
+    <script src="prodCtrl.js"></script>
+   
+  </head>
+
+  <body>
+<div ng-app="app" >
+
+
+      <form class="form-signin">
+        <h2 class="form-signin-heading">{{title1}}</h2>
+        <label for="name" class="sr-only">Name</label>
+        <input ng-model="name1" class="form-control" placeholder="your Name" required="" autofocus="" type="text">
+        <label for="pass" class="sr-only">Password</label>
+        <input ng-model="pass1" class="form-control" placeholder="Password" required="" type="password">
+        <button class="btn btn-lg btn-primary btn-block" type="button" ng-click="func()">Login</button>
+        
+      </form>
+
+    </div> <!-- /container -->
+
+
+
+</body></html>
